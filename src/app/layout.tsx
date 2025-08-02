@@ -10,6 +10,7 @@ import { ChartAreaInteractive } from "./dashboard/chart-area-interactive";
 import { cookies } from "next/headers";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/theme-provider";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +25,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Dashboard",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/dashboard.ico",
   },
 };
 
@@ -40,6 +41,11 @@ export default async function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        <link rel="icon" href="/dashboard.ico" sizes="any" />
+        <link rel="icon" href="/dashboard.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >      
