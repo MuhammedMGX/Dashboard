@@ -372,7 +372,7 @@ const filteredData: ChartDataVisitors[] = React.useMemo(() => {
           mode="single"
           selected={date}
           onSelect={setDate}
-          className="rounded-md border shadow-sm w-full bg-[var(--card)] max-w-full overflow-hidden [&_.rdp-table]:w-full [&_.rdp-table]:table-fixed"
+          className="rounded-md border shadow-sm w-full bg-[var(--card)] max-w-full md:w-[50%] overflow-hidden [&_.rdp-table]:w-full [&_.rdp-table]:table-fixed"
           captionLayout="dropdown"
         />
     </div>  
