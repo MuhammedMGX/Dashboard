@@ -251,15 +251,15 @@ const { isMobile } = useSidebar()
             <DropdownMenuGroup>
               <DropdownMenuItem>
                 <IconUserCircle />
-                Account
+                <Link href="/settings">Account</Link> 
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <IconCreditCard />
-                Billing
+                <Link href="/settings">Billing</Link> 
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <IconNotification />
-                Notifications
+                <Link href="/settings">Notifications</Link> 
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
