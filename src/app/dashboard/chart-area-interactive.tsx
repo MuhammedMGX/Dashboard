@@ -351,10 +351,10 @@ export function ChartAreaInteractive() {
       </Card>
 
 
- <div className="flex flex-wrap xl:flex-nowrap gap-x-4 w-full">
+ <div className="flex flex-wrap xl:flex-nowrap  gap-x-4 w-full">
 
-    <div className="w-full xl:max-w-[50%] flex gap-4 mt-5">
-        <Card className="w-[50%]">
+    <div className="w-full flex-wrap md:flex-nowrap xl:max-w-[50%] flex gap-4 mt-5">
+        <Card className="w-full md:w-[50%]">
           <CardHeader>
             <CardTitle>Bar Chart - Horizontal</CardTitle>
             <CardDescription>January - June 2024</CardDescription>
@@ -400,14 +400,14 @@ export function ChartAreaInteractive() {
           mode="single"
           selected={date}
           onSelect={setDate}
-          className="rounded-md border shadow-sm w-[50%] bg-[var(--card)]"
+          className="rounded-md border shadow-sm w-full md:w-[50%] bg-[var(--card)]"
           captionLayout="dropdown"
         />
     </div>  
 
 
-    <div className="w-full xl:max-w-[50%] flex gap-4 mt-5">
-        <Card className="flex flex-col w-[50%]">
+    <div className="w-full flex-wrap md:flex-nowrap xl:max-w-[50%] flex gap-4 mt-5">
+        <Card className="flex flex-col w-full md:w-[50%]">
           <CardHeader className="items-center pb-0">
             <CardTitle>Radial Chart - Shape</CardTitle>
             <CardDescription>January - June 2024</CardDescription>
@@ -475,7 +475,7 @@ export function ChartAreaInteractive() {
           </CardFooter>
         </Card>
 
-        <Card className="w-[50%]">
+        <Card className="w-full md:w-[50%]">
           <CardHeader>
             <CardTitle>Line Chart - Custom Dots</CardTitle>
             <CardDescription>January - June 2024</CardDescription>

@@ -145,7 +145,7 @@ const schema = z.object({
 
 const handleDelete = (id: number) => {
     deleteProducts(id); 
-    toast('Product deleted',{ icon: '👏', style: { borderRadius: '10px', background: '#333', color: '#fff',},});
+    toast('Chart deleted',{ style: { borderRadius: '10px', background: '#d10000', color: '#fff', border: 'none'},});
 };
 
 
